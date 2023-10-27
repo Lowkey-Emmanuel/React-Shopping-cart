@@ -1,0 +1,34 @@
+.navbar {
+	background-color: var(--secondary);
+	color: var(--white);
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 2em;
+
+	.navbar_logo {
+		font-size: 2.5rem;
+		animation: 4s infinite logo-spin;
+
+		:hover {
+			cursor: pointer;
+			filter: drop-shadow(0 0 18px var(--gradient));
+		}
+	}
+
+	.navbar-links {
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1.5em;
+
+		> * {
+			color: var(--white);
+		}
+
+		:hover {
+			text-decoration: underline;
+			filter: drop-shadow(0 0 18px var(--gradient));
+		}
+	}
+}
